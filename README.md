@@ -1,22 +1,28 @@
-# TripleTen Data Analysis Chapter 7 Project
+@'
+# Vehicle Advertisement Dashboard
 
-This project is a Streamlit web application that explores a vehicle advertisement dataset.
+This repository contains a Streamlit web application created for the TripleTen Software Development Tools project.
 
-## Live App
+## Live Application
 
-The deployed app is available here:
+The deployed Streamlit app is available here:
 
 https://tripleten-dataanalysis-chapter7-project.onrender.com
 
 ## Project Description
 
-The app loads vehicle advertisement data from `vehicles_us.csv` and displays interactive visualizations using Streamlit and Plotly Express.
+The project analyzes a dataset of used vehicle advertisements. The dashboard allows users to explore vehicle prices and the relationship between price and odometer readings.
 
-The dashboard includes:
+The application includes:
 
-- A vehicle price histogram
+- A price distribution histogram
 - A price vs. odometer scatter plot
-- A checkbox to show or hide the raw dataset
+- A checkbox that changes chart behavior by excluding vehicles priced above $100,000
+- An optional raw data display
+
+## Dataset
+
+The project uses the `vehicles_us.csv` dataset. The file is stored in the root directory of this repository.
 
 ## Technologies Used
 
@@ -24,13 +30,18 @@ The dashboard includes:
 - Pandas
 - Streamlit
 - Plotly Express
-- GitHub
 - Render
+- GitHub
 
-## How to Run Locally
+## Repository Structure
 
-Clone the repository:
-
-```bash
-git clone https://github.com/AlanFFM/TripleTen_DataAnalysis_Chapter7_Project.git
-cd TripleTen_DataAnalysis_Chapter7_Project
+```text
+.
+├── README.md
+├── app.py
+├── vehicles_us.csv
+├── requirements.txt
+├── notebooks
+│   └── EDA.ipynb
+└── .streamlit
+    └── config.toml
